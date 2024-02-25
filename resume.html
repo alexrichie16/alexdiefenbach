@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alex Diefenbach</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <style>
+            html{
+                background-color: antiquewhite;
+                border: 7px solid indigo;
+                margin: 1%;
+                font-family: Georgia;
+                color: black;
+            }
+            header{
+                margin: 1%;
+                padding: 3%;
+            }
+            header h1{
+                color: teal;
+            }
+            .body .section{
+                border: 3px solid black;
+                padding: 3%;
+                margin: 1%;
+            }
+            .body .section h4{
+                margin-left: 3%;
+                color: black;
+            }
+            .body .section p{
+                margin-left: 5%;
+            }
+            .body .section .jobtitle{
+                float: left;
+            }
+            .body .section .date{
+                float: right;
+            }
+            .clear{
+                clear: both;
+            }
+            .footersection1{
+                float: left;
+                width: 41%;
+                border: 3px solid black;
+                padding: 2%;
+                margin: 1%;
+            }
+            .footersection2{
+                float: right;
+                width: 41%;
+                border: 3px solid black;
+                padding: 2%;
+                margin: 1%;
+            }
+            .footersectiontitle{
+                color:black;
+                text-align: center;
+            }
+            .ul{
+                text-decoration: none;
+                list-style: none;
+            }
+            .left{
+                float: left;
+                display: inline-block;
+            }
+            .right{
+                float: right;
+                display: inline-block;
+            }
+            #logo{
+                border-radius: 50%;
+                border: 3px goldenrod inset;
+                margin: 0.5%;
+                padding: 0.25%;
+                background-color: white;
+            }
+            #logo2{
+                border-radius: 50%;
+                border: 3px goldenrod inset;
+                margin: 0.5%;
+                padding: 0.25%;
+                background-color: whitesmoke;
+            }
+            .position{
+                font-style: italic;
+                text-decoration: underline;
+            }
+            .sh{
+                color: darkblue;
+            }
+            #info{
+                border: 5px black outset;
+                padding: 1.5%;
+                margin: 0.5%;
+            }
+
+        </style>
+    </head>
+
+    <header>
+        <div>
+            <div class="left" id="info">
+                <h1 id="name">
+                    Alex Diefenbach
+                </h1>
+                <h4 id="name2">
+                    339-228-8723 | alexrichiecb@gmail.com | Salem, MA
+                </h4>
+            </div>
+
+            <div class="rightside">
+            <img src="images/SPS.jpeg" class="right" id="logo" height="75px" width="75px">
+            <img src="images/SOBL.png" class="right" id="logo2" height="75px" width="75px">
+            <script type="text/javascript"> 
+                window.onload = fadeIn;
+                  
+                function fadeIn() {
+                    fadeIn2();
+                    fadeIn3();
+                    fadeIn4();
+                    var fade = document.getElementById("logo"); 
+                    var opacity = 0; 
+                    var intervalID = setInterval(function() { 
+                  
+                        if (opacity < 1) { 
+                            opacity = opacity + 0.15
+                            fade.style.opacity = opacity; 
+                        } else { 
+                            clearInterval(intervalID); 
+                        } 
+                    }, 200); 
+                }
+
+
+                function fadeIn2() { 
+                    var fade = document.getElementById("logo2"); 
+                    var opacity = 0; 
+                    var intervalID = setInterval(function() { 
+                  
+                        if (opacity < 1) { 
+                            opacity = opacity + 0.15
+                            fade.style.opacity = opacity; 
+                        } else { 
+                            clearInterval(intervalID); 
+                        } 
+                    }, 200); 
+                }
+
+                function fadeIn3() {
+                      var fade = document.getElementById("name"); 
+                      var opacity = 0; 
+                      var intervalID = setInterval(function() { 
+                    
+                          if (opacity < 1) { 
+                              opacity = opacity + 0.15
+                              fade.style.opacity = opacity; 
+                          } else { 
+                              clearInterval(intervalID); 
+                          } 
+                      }, 200); 
+                    }
+                  
+                  function fadeIn4() {
+                      var fade = document.getElementById("name2"); 
+                      var opacity = 0; 
+                      var intervalID = setInterval(function() { 
+                    
+                          if (opacity < 1) { 
+                              opacity = opacity + 0.15
+                              fade.style.opacity = opacity; 
+                          } else { 
+                              clearInterval(intervalID); 
+                          } 
+                      }, 200); 
+                    }
+            </script>
+            </div>
+            
+        </div>
+        
+        
+    </header>
+
+    <div class="clear"></div>
+    <br>
+
+    <div class="body">
+        <div class="section">
+        <h2 class="sh">Work Experience</h2>
+
+        <h4 class="jobtitle">Great Rock Church</h4>
+        <h4 class="date">2/2024-Present</h4>
+        <br><br><br>
+        <p class="position">Position: Website Designer</p>
+        <p>Designed and implemented new website using HTML/CSS/JS. Used linear algebra to add personalization features.</p>
+        <div class="clear"></div>
+
+        <h4 class="jobtitle">Root North Shore Inc.</h4>
+        <h4 class="date">1/2024-Present</h4>
+        <br><br><br>
+        <p class="position">Position: Trainee and Caterer</p>
+        <p>Completed culinary training program, certifcations and catered for community.</h6>
+        <div class="clear"></div>
+
+        <h4 class="jobtitle">Frist Center for Autism and Innovation</h4>
+        <h4 class="date">8/2023-12/2023</h4>
+        <br><br><br>
+        <p class="position">Position: Marketing Specialist</p>
+        <p>Created infographics and event advertisements for Frist Center— an initiative focused the achievement of people on the spectrum in STEM.</p>
+        <div class="clear"></div>
+        
+        <h4 class="jobtitle">Google Software Internship</h4>
+        <h4 class="date">6/2021-8/2022</h4>
+        <br><br><br>
+        <p class="position">Position: Summer Intern</p>
+        <p>Worked with software engineer from Google to develop Bitcoin value predictor software using python.</p>
+        <div class="clear"></div>
+        </div>
+
+        <div class="section">
+            <h2 class="sh">Education</h2>
+            <h4 class="jobtitle">Salem State University</h4>
+            <h4 class="date">Class of 2025</h4>
+            <br><br><br>
+            <p>Major: Mathematics</p>
+
+            <div class="clear"></div>
+            <h4 class="jobtitle">Salem High School</h4>
+            <h4 class="date">Class of 2021</h4>
+            <br><br><br>
+            <p>Graduated 1 year early, 4.6 GPA, High Honor Roll</p>
+        </div>
+
+        <div class="section">
+            <h2 class="sh">Research</h2>
+            <h4 class="jobtitle">Stassun Astronomy Laboratory</h4>
+            <h4 class="date">Fall 2023</h4>
+            <br><br><br>
+            <p>Researched correlation between stellar chemical ratios and exoplanet habitability using Jupyter/Python.
+            </p>
+
+            <div class="clear"></div>
+            <h4 class="jobtitle">Runnoe Astronomy Laboratory</h4>
+            <h4 class="date">Spring 2023</h4>
+            <br><br><br>
+            <p>Researched the correlation between galactic redshift and distance using Jupyter/Python.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="sh">Certifications and Accolades</h2>
+            <div class="ul">
+                <div class="left">
+                    <h4 class="jobtitle">Massachusetts State Seal of Biliteracy</h4>
+                    <br><br><br>
+                    <p>Awarded to students who have demonstrated proficiency in 2+ languages.</p>
+                    <div class="clear"></div>
+                    <h4 class="jobtitle">Red Cross CPR and First Aid Training</h4>
+                    <div class="clear"></div>
+                    <h4 class="jobtitle">ServSafe Food Safety and Allergen Awareness</h4>
+                </div>
+                <div class="right">
+                    <h4 class="jobtitle">Sigma Pi Sigma National Physics Honor Society</h4>
+                    <br><br><br>
+                    <p>Awarded to students with exceptional performance in physics curriculum.</p>
+                    <div class="clear"></div>
+                    <h4 class="jobtitle">Cell Signaling Technology Scholarship</h4>
+                    <div class="clear"></div>
+                    <h4 class="jobtitle">Mavrogenis Engineering Scholarship</h4>
+                </div>
+            </div>
+            
+
+            <div class="clear"></div>
+        
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footersection1">
+            <h3 class="footersectiontitle">Skills</h3>
+            <ul class="ul">
+                <div class="left">
+                    <li><p>HTML/CSS/JS</p></li>
+                    <li><p>Wordpress</p></li>
+                    <li><p>Weebly</p></li>
+                    <li><p>Python</p></li>
+                    <li><p>C++</p></li>
+                </div>
+
+                <div class="right">
+                    <li><p>Planning/Organization</p></li>
+                    <li><p>Presenting</p></li>
+                    <li><p>Applied Mathematics</p></li>
+                    <li><p>Google Suite/Utilities</p></li>
+                    <li><p>Social Media Management</p></li>
+                </div>
+            </ul>
+            
+        </div>
+
+        <div class="footersection2">
+            <h3 class="footersectiontitle">Languages</h3>
+                <ul class="ul">
+                    <div class="left">
+                        <li><p>English</p></li>
+                        <li><p>Spanish</p></li>
+                        <li><p>German</p></li>
+                        <li><p>Portuguese</p></li>
+                        <li><p>French</p></li>
+                    </div>
+                    <div class="right">
+                        <li><p>	
+                            &#8226	
+                            &#8226	
+                            &#8226	
+                            &#8226	
+                            &#8226</p></li>
+                        <li><p>	
+                            &#8226	
+                            &#8226	
+                            &#8226	
+                            &#8226</p></li>
+                        <li><p>	
+                            &#8226	
+                            &#8226	
+                            &#8226</p></li>
+                        <li><p>	
+                            &#8226	
+                            &#8226	
+                            &#8226</p></li>
+                        <li><p>	
+                            &#8226	
+                            &#8226</p></li>
+                    </div>
+                </ul>
+        </div>
+
+    </div>
+
+
+
+</html>
