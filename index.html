@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="whole">
     <head>
         <title>Alex Diefenbach</title>
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -113,69 +113,6 @@
             <div class="rightside">
             <img src="images/SPS.jpeg" class="right" id="logo" height="75px" width="75px">
             <img src="images/SOBL.png" class="right" id="logo2" height="75px" width="75px">
-            <script type="text/javascript"> 
-                window.onload = fadeIn;
-                  
-                function fadeIn() {
-                    fadeIn2();
-                    fadeIn3();
-                    fadeIn4();
-                    var fade = document.getElementById("logo"); 
-                    var opacity = 0; 
-                    var intervalID = setInterval(function() { 
-                  
-                        if (opacity < 1) { 
-                            opacity = opacity + 0.15
-                            fade.style.opacity = opacity; 
-                        } else { 
-                            clearInterval(intervalID); 
-                        } 
-                    }, 200); 
-                }
-
-
-                function fadeIn2() { 
-                    var fade = document.getElementById("logo2"); 
-                    var opacity = 0; 
-                    var intervalID = setInterval(function() { 
-                  
-                        if (opacity < 1) { 
-                            opacity = opacity + 0.15
-                            fade.style.opacity = opacity; 
-                        } else { 
-                            clearInterval(intervalID); 
-                        } 
-                    }, 200); 
-                }
-
-                function fadeIn3() {
-                      var fade = document.getElementById("name"); 
-                      var opacity = 0; 
-                      var intervalID = setInterval(function() { 
-                    
-                          if (opacity < 1) { 
-                              opacity = opacity + 0.15
-                              fade.style.opacity = opacity; 
-                          } else { 
-                              clearInterval(intervalID); 
-                          } 
-                      }, 200); 
-                    }
-                  
-                  function fadeIn4() {
-                      var fade = document.getElementById("name2"); 
-                      var opacity = 0; 
-                      var intervalID = setInterval(function() { 
-                    
-                          if (opacity < 1) { 
-                              opacity = opacity + 0.15
-                              fade.style.opacity = opacity; 
-                          } else { 
-                              clearInterval(intervalID); 
-                          } 
-                      }, 200); 
-                    }
-            </script>
             </div>
             
         </div>
@@ -212,7 +149,7 @@
         <div class="clear"></div>
         
         <h4 class="jobtitle">Google Software Internship</h4>
-        <h4 class="date">6/2021-8/2021</h4>
+        <h4 class="date">6/2021-8/2022</h4>
         <br><br><br>
         <p class="position">Position: Summer Intern</p>
         <p>Worked with software engineer from Google to develop Bitcoin value predictor software using python.</p>
@@ -341,6 +278,23 @@
 
     </div>
 
+    <script type="text/javascript"> 
+        window.onload = fadeIn;
+          
+        function fadeIn() {
+            var fade = document.getElementById("whole"); 
+            var opacity = 0; 
+            var intervalID = setInterval(function() { 
+          
+                if (opacity < 1) { 
+                    opacity = opacity + 0.1
+                    fade.style.opacity = opacity; 
+                } else { 
+                    clearInterval(intervalID); 
+                } 
+            }, 200); 
+        }
+    </script>
 
 
 </html>
